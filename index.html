@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head lang="cn">
+    <meta charset="UTF-8">
+    <title>象棋</title>
+<!--	从外部引入CSS文件-->
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <link rel="stylesheet" href="css/Chess.css" type="text/css">
+<!--    <style>-->
+<!--        @import "css/index.css";-->
+<!--    </style>-->
+<!--	从外部引入JS文件-->
+    <script src="Js/jquery.min.js" type="text/javascript"></script>
+    <script src="Js/Show.js" type="text/javascript"></script>
+    <script src="Js/OnDoing.js" type="text/javascript"></script>
+    <script src="Js/CMoveRule.js" type="text/javascript"></script>
+    <script src="Js/CChess.js" type="text/javascript"></script>
+
+
+</head>
+<body>
+<!--2. div,section,article 的使用区别
+样式化 无区别: 针对一个 块内容 做样式化，三者 并无区别
+语义 增强: div ,section ,article ，语义是 从无到有，逐渐 增强的。
+三者 基础用法:
+① div
+样式化 或 脚本化: 无任何语义，仅仅用作 样式化 或者 脚本化；
+② section
+主题性 内容: 对于一段 主题性的内容，则就适用 section；
+强调 主题性的 分区.
+③ article
+(可脱离的 完整独立的) 主题性内容: 假如一段 主题性内容 脱离上下文后 仍是 完整且独立存在 的一段内容，则就适用 article
+强调 完整和独立性的 主题性分区.-->
+
+<section id="ground">
+    <section id="board">
+        <section id="line">
+            <section id="rows">
+<!--                十行九列-->
+                <article class="row"></article>
+                <article class="row"></article>
+                <article class="row"></article>
+                <article class="row"></article>
+                <article class="row"></article>
+                <article class="row"></article>
+                <article class="row"></article>
+                <article class="row"></article>
+                <article class="row"></article>
+                <article class="row end"></article>
+            </section>
+            <section id="lines">
+                <article class="line"></article>
+                <article class="line"></article>
+                <article class="line"></article>
+                <article class="line"></article>
+                <article class="line"></article>
+                <article class="line"></article>
+                <article class="line"></article>
+                <article class="line"></article>
+                <article class="line end"></article>
+            </section>
+            <section id="river">
+                <article>۞۞۞۞۞۞۞۞</article>
+            </section>
+            <section id="flower">
+                <section id="F">
+                    <section class="L2">
+                        <article></article>
+                        <article class="t2"></article>
+                    </section>
+                    <section class="L5">
+                        <article></article>
+                        <article></article>
+                        <article></article>
+                        <article></article>
+                        <article></article>
+                    </section>
+                </section>
+                <section id="L">
+                    <section class="L5">
+                        <article></article>
+                        <article></article>
+                        <article></article>
+                        <article></article>
+                        <article></article>
+                    </section>
+                    <section class="L2">
+                        <article></article>
+                        <article></article>
+                    </section>
+                </section>
+            </section>
+            <section id="cross">
+                <section id="T">
+                    <article></article>
+                    <article></article>
+                </section>
+                <section id="B">
+                    <article></article>
+                    <article></article>
+                </section>
+            </section>
+        </section>
+        <section id="space"></section>
+    </section>
+</section>
+</body>
+</html>
